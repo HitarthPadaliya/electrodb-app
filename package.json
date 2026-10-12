@@ -1,0 +1,25 @@
+{
+  "name": "electrodb",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Database-driven electronic components reference website",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "check": "node scripts/check-db.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "katex": "^0.16.22",
+    "mysql2": "^3.14.0"
+  }
+}

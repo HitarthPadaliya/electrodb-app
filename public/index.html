@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore electronic components, circuit principles, truth tables, and specifications with ElectroDB.">
+  <meta name="color-scheme" content="dark light">
+  <title>ElectroDB — Electronics reference</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/config.js" defer></script>
+  <script src="/vendor/katex/katex.min.js" defer></script>
+  <script src="/js/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="ElectroDB home"><span class="brand-mark" aria-hidden="true">E</span><span>Electro<span class="accent">DB</span><small>THE ELECTRONICS REFERENCE</small></span></a>
+    <form class="header-search search-form" role="search" action="/search">
+      <label class="sr-only" for="global-search">Search components</label>
+      <span aria-hidden="true">⌕</span><input id="global-search" name="q" type="search" maxlength="200" placeholder="Search components, circuits, principles…">
+      <button class="search-submit" type="submit">Search</button>
+    </form>
+    <div class="header-actions"><button id="theme-toggle" class="icon-button" type="button" aria-label="Switch color theme">◐</button><button id="menu-toggle" class="icon-button menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">☰<span class="sr-only">Toggle category navigation</span></button></div>
+  </header>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar" aria-label="Catalogue navigation">
+      <p class="nav-label">WORKSPACE</p>
+      <nav class="primary-nav"><a href="/" data-primary="home"><span aria-hidden="true">⌂</span>Overview</a><a href="/browse" data-primary="browse"><span aria-hidden="true">▦</span>All components</a></nav>
+      <div class="nav-heading"><p class="nav-label">BROWSE CATEGORIES</p><span id="category-count" class="tiny-badge"></span></div>
+      <nav id="category-tree" aria-label="Category tree"><p class="muted">Loading categories…</p></nav>
+      <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><span>Built for curious minds<small>A database-driven reference library.</small></span></div>
+    </aside>
+    <main id="main" tabindex="-1" aria-live="polite"></main>
+  </div>
+  <footer class="footer">ElectroDB · Educational reference<span>Illustrative values are not manufacturer guarantees. Consult the selected part’s datasheet.</span></footer>
+  <noscript><p class="notice">JavaScript is required to load the catalogue from the API.</p></noscript>
+</body>
+</html>
